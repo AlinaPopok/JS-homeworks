@@ -20,21 +20,23 @@ const n = 6689;
 let result3 = '';
 
 for (let i = 1; i < 101; i++) {
-    if (Math.pow(i, 2) <= n) {
-        result3 += `Квадрат числа ${i} дорівнює ${Math.pow(i, 2)}\n`
+    if (Math.pow(i, 2) >= n) {
+       break
     }
+    result3 += `Квадрат числа ${i} дорівнює ${Math.pow(i, 2)}\n`
 }
 console.log(result3)
 
 //4 Дане ціле число. З'ясувати, чи є воно простим (простим називається число, більше 1, які не мають інших дільників крім 1 і себе).
 
-const num = 29;
+const num = 10;
 let divCount = 0;
 
 for (let i = 1; i <= num; i++) {
-    if (num % i === 0) {
-        divCount++
+    if (num % i !== 0) {
+        continue
     }
+    divCount++
 }
 
 if (divCount > 2) {
@@ -53,14 +55,13 @@ const num2 = prompt('введіть число');
 let result4 = 0
 
 for (let i = 1; i < num2; i++) {
-    if (Math.pow(3, i) === Number(num2)) {
-        result4 = i;
-        break;
+    if (Math.pow(3, i) !== Number(num2)) {
+        continue;
     }
+    result4 = i;
+    break;
 }
 
-if (result4 > 1) {
-    console.log(`Щоб отримати число ${num2} потрібно звести 3 у ${result4} ступінь`)
-} else {
-    console.log(`Неможливо звести число 3 у ступінь щоб отримати ${num2}`)
-}
+result4 > 1
+    ? console.log(`Щоб отримати число ${num2} потрібно звести 3 у ${result4} ступінь`)
+    : console.log(`Неможливо звести число 3 у ступінь щоб отримати ${num2}`)
