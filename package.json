@@ -2,7 +2,7 @@
   "name": "js-homeworks",
   "version": "1.0.0",
   "description": "hillel hw",
-  "main": "js/index.js",
+  "main": "js/student.js",
   "scripts": {
     "test": "test"
   },
