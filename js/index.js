@@ -1,0 +1,20 @@
+import Person from "./Person.js";
+import Apartment from "./Apartment.js";
+import Building from "./Building.js";
+
+const person1 = new Person("Zefir", "male");
+const person2 = new Person("Zefira", "female");
+const person3 = new Person("Zulu", "female");
+const apartment1 = new Apartment();
+const apartment2 = new Apartment();
+const building = new Building(4);
+apartment1.addResident(person1, person2);
+apartment2.addResident(person3);
+building.addApartment(apartment1);
+building.addApartment(apartment2);
+console.log(person1);
+console.log(person2);
+console.log(person3);
+console.log(apartment1);
+console.log(apartment2);
+console.log(building);
