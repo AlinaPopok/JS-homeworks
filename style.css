@@ -1,0 +1,20 @@
+*{
+    box-sizing: border-box;
+}
+.container {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.doc-title{
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+.comment-body{
+    border: 1px solid #111;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.post{
+    margin-bottom: 10px;
+}
